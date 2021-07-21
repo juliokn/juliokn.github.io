@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap');
+
+//referencias para responsividade
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+*{margin: 0; padding: 0; border:none}
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+    width: 10vh;
+    height: 5vh;
+    font-size: 2vh;
+    border: 2px solid black;
+    border-radius: 12%;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.todolistContainer{
+    background-color: #fff;
+    margin: 5vh 5vh 0 5vh;
+    display: flex;
+    height: 35vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    &__title{
+        font-size: 9vh;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    &__containerInput{
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__text{
+        width: 40vh;
+        height: 5vh;
+        font-size: 2vh;
+        text-indent: 1vh;
+        border: 2px solid black;
+        margin: 0 2vh 0 0;
+    }
+}
+
+.todolistItems{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    background-color: #fff;
+    height: 45vh;
+    margin: 0 5vh 0 5vh;
+
+    &__item{
+        margin: 0 2vh 1vh 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid red;
+        font-size: 2vh;
+
+    }
+
+    &__icon{
+        max-width: 3vh;
+        max-height: 3vh;    
+        margin-left: 1vh;
+    }
+}
+
+.todolistFooter{
+    background-color: #fff;
+    height: 15vh;
+    margin: 0 5vh 0 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: $mobile){
+
+
+    .btn{
+        width: 10vh;
+        height: 4vh;
+        font-size: 3vh;
+        border: 1px solid black;
+        border-radius: 12%;
+    }
+    
+    .title{
+        margin-bottom: 0;
+    }
+
+    .todolistContainer{
+        margin: 2vh 2vh 0 2vh;
+
+        &__title{
+            font-size: 8vh;
+        }
+
+        &__containerInput{
+            flex-direction: column;
+        }
+
+        &__text{
+            width: 32vh;
+            margin: 2vh;
+        }
+    }
+
+    .todolistItems{
+        margin: 0vh 2vh 0 2vh;
+        
+        &__item{
+        font-size: 1.3vh;
+        }
+    }
+
+    .todolistFooter{
+        margin: 0vh 2vh 0 2vh;
+    }
+}
