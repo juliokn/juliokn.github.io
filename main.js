@@ -25,7 +25,7 @@ window.onload = function(){
     function adicionaItem(){
         if (novoItem.value != "" && limiteDeItems < 10){
             localParaNovoItemHtml.innerHTML +=
-             "<div class='todolistItems__item' id='"+idDoItem+"'><div class='todolistItems__itemNome'><h2 class='containerItem'>"+novoItem.value+"</h2></div><div class='todolistItems__itemIcones'><img class='todolistItems__icon "+idDoItem+"' id='iconCheck' src='./_icons/icon_check.png'><img class='todolistItems__icon "+idDoItem+"' id='iconDel' src='./_icons/icon_delete.png'></div></div>";
+             "<div class='todolistItems__item' id='"+idDoItem+"'><div class='todolistItems__itemNome'><h2 class='containerItem'>"+novoItem.value+"</h2></div><div class='todolistItems__itemIcones'><img class='todolistItems__icon "+idDoItem+"' id='iconCheck' src='_icons/icon_check.png'><img class='todolistItems__icon "+idDoItem+"' id='iconDel' src='_icons/icon_delete.png'></div></div>";
             idDoItem++;
             limiteDeItems++;
             document.querySelector(".todolistContainer__text").value = "";
